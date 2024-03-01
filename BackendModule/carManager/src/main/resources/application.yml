@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: ${SPRING_MYSQl_URL:jdbc:mariadb://localhost:3306/car_manager}
+    username: ${SPRING_MYSQl_USER:root}
+    password: ${SPRING_MYSQL_PASSWORD:mypassword}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  hibernate:
+    ddl-auto: update

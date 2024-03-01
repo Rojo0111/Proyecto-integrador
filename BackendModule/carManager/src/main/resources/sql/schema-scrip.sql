@@ -2,6 +2,14 @@ CREATE SCHEMA IF NOT EXISTS car_manager;
 
 use car_manager;
 
+CREATE TABLE admin(
+  user_id VARCHAR(50) NOT NULL PRIMARY KEY,
+  name VARCHAR(50),
+  last_name VARCHAR(50),
+  email VARCHAR(50),
+  phone VARCHAR(255)
+)
+
 CREATE TABLE user (
   user_id VARCHAR(50) NOT NULL PRIMARY KEY,
   name VARCHAR(50),

@@ -29,9 +29,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;alejandro99billi&quot;,
+      &quot;author&quot;: &quot;alejandro99billi&quot;,
+      &quot;label&quot;: &quot;documentation&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;alejandro99billi&quot;
+    &quot;assignee&quot;: &quot;alejandro99billi&quot;,
+    &quot;author&quot;: &quot;alejandro99billi&quot;,
+    &quot;label&quot;: &quot;documentation&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
@@ -58,7 +68,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;backend-module&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alejandro/Desktop/IntegrationProyect/BackendModule/carManager&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alejandro/Desktop/IntegrationProyect&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
