@@ -1,0 +1,49 @@
+-- Crear una nueva base de datos
+CREATE DATABASE MantenimientoVehicular;
+GO
+
+-- Utilizar la nueva base de datos
+USE MantenimientoVehicular;
+GO
+
+-- Crear una tabla para almacenar los datos de mantenimiento
+CREATE TABLE Mantenimiento (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Tipo VARCHAR(50),
+    KmIntervalo INT,
+    Accion VARCHAR(100),
+    Costo FLOAT,
+    ManoDeObra FLOAT
+);
+GO
+
+-- Insertar datos en la tabla de mantenimiento
+-- Cambios cada 5000 Km
+INSERT INTO Mantenimiento (Tipo, KmIntervalo, Accion, Costo, ManoDeObra)
+VALUES 
+    ('Cambio de aceite', 5000, 's', 12, 1.81),
+    ('Limpieza de filtros', 5000, 's', 15, 1.05),
+    ('Chequeo de inyectores', 5000, 's', 15, 0.75),
+    ('Balanceo', 5000, 's', 15, 2.25),
+    ('Revisión del sistema eléctrico', 5000, 's', 15, 0.75);
+
+-- Cambios cada 25000 Km
+INSERT INTO Mantenimiento (Tipo, KmIntervalo, Accion, Costo, ManoDeObra)
+VALUES 
+    ('Líquido de frenos', 25000, 's', 75, 18.75),
+    ('Revisión del motor', 25000, 's', 14, 5.75);
+
+-- Cambios obligatorios pasados los 100.000 Km
+INSERT INTO Mantenimiento (Tipo, KmIntervalo, Accion, Costo, ManoDeObra)
+VALUES 
+    ('Filtros de aire', 100000, 's', 75, 18.75),
+    ('Escobillas limpiaparabrisas', 100000, 's', 14, 5.75),
+    ('Amortiguadores', 100000, 's', 23, 14),
+    ('Luces', 100000, 's', 56, 21),
+    ('Filtro del combustible', 100000, 's', 84, 18.5),
+    ('Filtro antipolen', 100000, 's', 74, 11.25),
+    ('Kit de distribución (correa)', 100000, 's', 45, 16.75),
+    ('Catalizadores', 100000, 's', 67, 21);
+
+-- Mostrar los datos insertados
+SELECT * FROM Mantenimiento;
